@@ -11,13 +11,17 @@ public final class Main {
 		Rational r;
 		for (int i =0; i< matriceSize; ++i){
 			for(int j=0; j < i+1; ++j){
-				int num = rand.nextInt(100);
-				int denum = rand.nextInt(99)+1;
+				int num = rand.nextInt(10);
+				int denum = rand.nextInt(9)+1;
                 r = new Rational(num, denum);
                 c.setValue(i, j, r);
 			}
 		}
 		System.out.println(c);
+		r = c.getSum();
+		System.out.println("Somme: " + r);
+		r = c.getDeterminant();
+		System.out.println("Determinant: " + r);
 	}
 
 }

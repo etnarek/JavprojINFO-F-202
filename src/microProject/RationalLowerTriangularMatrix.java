@@ -42,10 +42,10 @@ public class RationalLowerTriangularMatrix {
 		String s ="";
 		for (int i=0; i<matrice.length;++i){
 			for(int j=0;j<matrice[i].length;++j){
-				s += String.format("%-5s", matrice[i][j]) + " ";
+				s += String.format("%3s", matrice[i][j]) + " ";
 			}
 			for (int k=0; k<(matrice.length - matrice[i].length); ++k){
-				s +=  String.format("%-5s","0") + " ";
+				s +=  String.format("%3s","0") + " ";
 			}
 			s += "\n";
 		}
