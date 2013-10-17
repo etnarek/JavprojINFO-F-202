@@ -14,6 +14,9 @@ public final class Main {
 		System.out.println(r);
 		System.out.println("Hello");
 		System.out.println(c);
+		System.out.println("Renvoye une exception:");
+		Rational r3 = new Rational(1,0);
+		System.out.println(r3);
 	}
 
 }

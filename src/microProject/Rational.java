@@ -16,9 +16,7 @@ public class Rational {
 			simplify();
 		}
 		else{
-//			TODO: Raise exception
-			num = 0;
-			denum = 1;
+			throw new IllegalArgumentException("Argument 'denum' is 0");
 		}
 	}
 	
