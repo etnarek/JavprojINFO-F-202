@@ -1,25 +1,23 @@
 package microProject;
+import java.util.Random;
 
 public final class Main {
 
 	public static void main(String[] args) {
-		System.out.println("Hello world!");
-		Rational r = new Rational(0, 1);
-		Rational r2 = new Rational(1, 4);
-		r.add(r2);
-		System.out.println(r);
-		RationalLowerTriangularMatrix c = new RationalLowerTriangularMatrix(2);
-		c.setValue(0, 0, r2);
-		r = c.getSum();
-		System.out.println(r);
-		System.out.println("Hello");
-		System.out.println(c);
-		
-		RationalLowerTriangularMatrix c2 = new  RationalLowerTriangularMatrix(0);
+		final int matriceSize =10;
+		Random rand = new Random();
+		RationalLowerTriangularMatrix c = new RationalLowerTriangularMatrix(matriceSize);
 
-		System.out.println("Renvoye une exception:");
-//		Rational r3 = new Rational(1,0);
-//		System.out.println(r3);
+		Rational r;
+		for (int i =0; i< matriceSize; ++i){
+			for(int j=0; j < i+1; ++j){
+				int num = rand.nextInt(100);
+				int denum = rand.nextInt(99)+1;
+                r = new Rational(num, denum);
+                c.setValue(i, j, r);
+			}
+		}
+		System.out.println(c);
 	}
 
 }
