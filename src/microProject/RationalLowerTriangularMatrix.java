@@ -5,6 +5,9 @@ public class RationalLowerTriangularMatrix {
 	
 	public RationalLowerTriangularMatrix(int size){
 //		TODO verify size >> 0 (raise error in other cases
+		if (size < 1){
+			throw new IllegalArgumentException("Argument 'size' must be greater than 0");
+		}
 		matrice = new Rational[size][];
 		for (int i=0; i < matrice.length; ++i) {
             matrice[i] = new Rational [i+1];

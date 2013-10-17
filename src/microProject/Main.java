@@ -14,9 +14,12 @@ public final class Main {
 		System.out.println(r);
 		System.out.println("Hello");
 		System.out.println(c);
+		
+		RationalLowerTriangularMatrix c2 = new  RationalLowerTriangularMatrix(0);
+
 		System.out.println("Renvoye une exception:");
-		Rational r3 = new Rational(1,0);
-		System.out.println(r3);
+//		Rational r3 = new Rational(1,0);
+//		System.out.println(r3);
 	}
 
 }
