@@ -3,7 +3,7 @@ package microProject;
 public class RationalLowerTriangularMatrix {
 	private Rational matrice[][];
 	
-	public RationalLowerTriangularMatrix(int size){
+	public RationalLowerTriangularMatrix(int size) throws IllegalArgumentException{
 		if (size < 1){
 			throw new IllegalArgumentException("Argument 'size' must be greater than 0");
 		}

@@ -16,7 +16,7 @@ public class Rational {
 			simplify();
 		}
 		else{
-			throw new IllegalArgumentException("Argument 'denum' is 0");
+			throw new ArithmeticException ("Argument 'denum' is 0");
 		}
 	}
 	
